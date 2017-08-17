@@ -1,0 +1,64 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: url('../image/generator/test-cvet.jpg') no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+.Colorblock{
+
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: red 0px 0px 5px;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    top: 40%;
+    margin-top: -75px;
+
+}
+
+.HexBlock{
+    width: 150px;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    top: 57%;
+    margin-top: -75px;
+}
+
+@media (max-width:551px) {
+    .content{
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+    }
+
+    .Colorblock{
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .HexBlock{
+        width: 100px;
+        margin-left: -50px;
+        top: 50%;
+    }
+}
